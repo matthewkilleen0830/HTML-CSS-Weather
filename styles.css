@@ -37,3 +37,38 @@ h2 {
     font-family:  "Georgia", serif;
     margin-top:  75px;
 }
+
+h4 {
+    text-align:  left;
+    font-family:  "Georgia", serif;
+    font-size:  18px;
+    font-weight:  bold;
+    color:  #4aaaa5
+}
+
+p {
+    font-family:  "Arial", sans-serif;
+    font-size:  12px;
+    line-height:  1.5;
+}
+
+#img-wrap {
+    float:  left;
+}
+
+.img.fluid {
+    max-width:  100%;
+    height:  auto;
+}
+
+h3 {
+    text-align:  left;
+    font-family:  "Georgia", serif;
+    font-size:  18px;
+    font-weight:  bold;
+    color:  #4aaaa5
+}
+
+.container-fluid {
+    background-color:  #ffffff;
+}

@@ -4,17 +4,25 @@
 
 <!-- Define head and page title -->
 <head>
+
     <meta charset = "UTF-8">
     <title>Latitude Analysis Dashboard with Attitude</title>
 
-  <!-- Set the viewport for browsing with all devices -->
-  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, shrink-to-fit = no">
+    <!-- Set the viewport for browsing with all devices -->
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0, shrink-to-fit = no">
   
-  <!-- Links to reference bootstrap and CSS stylesheets -->
-  <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity = "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin = "anonymous">
-  <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity = "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin = "anonymous"></script>
-  <link rel = "stylesheet" href = "styles.css">
+    <!-- Links to reference bootstrap and CSS stylesheets -->
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity = "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin = "anonymous">
+    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity = "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin = "anonymous"></script>
+    <link rel = "stylesheet" href = "styles.css">
+
+    <!-- Bootstrap JavaScript links:  jQuery and Bootstrap JavaScript -->
+    <script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin = "anonymous "></script>
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity = "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin = "anonymous "></script>
+
 </head>
+
+<!-- ALL PAGES NAVBAR -->
 
 <!--Start of body -->
 <body class = "bg-light">
@@ -43,6 +51,8 @@
                         <a class = "dropdown-item" href = "lat_vs_wind_speed.html">Wind Speed</a>
                     </div>
                 </li>
+
+                <!-- Additional links -->
                 <li class = "nav-item active">
                     <a class = "nav-link" href = "comparisons.html">Comparison</a>
                 </li>
@@ -53,11 +63,78 @@
         </div>
     </nav>
 
-    <!-- Bootstrap JavaScript links:  jQuery and Bootstrap JavaScript -->
-    <script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin = "anonymous "></script>
-    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity = "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin = "anonymous "></script>
+    <!-- LANDING PAGE CONTENT -->
 
-<h2>***UNDER CONSTRUCTION***</h2>
+    <!-- Create Bootstrap container/table with one cell -->
+    <div class = "container-fluid">    
+        <div class = "row pb-3">
+
+            <!-- DIVIDE ROW 1 INTO TWO COLUMNS -->
+
+            <!-- Column 1 -->
+            <div class = "col-md-12 col-lg-7 mt-5">
+                <div class = "col-md-12">
+                    <h3>Summary: Latitude vs. Atmospheric Conditions</h3>
+                    <br>
+                    <br>
+                    <div class = "body">
+                        <img id = "img-wrap" class = "img.fluid" width = "32%" height = "auto" src = "Resources/assets/images/Fig1.png">
+                    </div>
+                    <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p> 
+                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.  Factors we looked at included:  temperature, cloudiness, wind speed, and humidity.  This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class = "col-md-12 col-lg-5 mt-5">
+                <div class = "col-md-12">
+                    <h3>Visualizations</h3>
+                    <br>
+                    <br>
+                    <div class = "body">
+
+                        <!-- DIVIDE COLUMN 2 INTO TWO ROWS -->
+
+                        <!-- Row 1 -->
+                        <div class = "row pb-3">
+
+                            <!-- Row 1, Column 1 -->
+                            <div class = "col-md-6">
+                                <div class = "body">
+                                    <a href = "lat_vs_max_temp.html"><img class = "img.fluid" width = "100%" height = "auto" src = "Resources/assets/images/Fig1.png"></a>
+                                </div>
+                            </div>
+
+                            <!-- Row 1, Column 2 -->
+                            <div class = "col-md-6">
+                                <div class = "body">
+                                    <a href = "lat_vs_humidity.html"><img class = "img.fluid" width = "100%" height = "auto" src = "Resources/assets/images/Fig2.png"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class = "row pb-3">
+
+                            <!-- Row 2, Column 1 -->
+                            <div class = "col-md-6">
+                                <div class = "body">
+                                    <a href = "lat_vs_max_cloudiness.html"><img class = "img.fluid" width = "100%" height = "auto" src = "Resources/assets/images/Fig3.png"></a>
+                                </div>
+                            </div>
+
+                            <!-- Row 2, Column 2 -->
+                            <div class = "col-md-6">
+                                <div class = "body">
+                                    <a href = "lat_vs_wind_speed.html"><img class = "img.fluid" width = "100%" height = "auto" src = "Resources/assets/images/Fig4.png"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
