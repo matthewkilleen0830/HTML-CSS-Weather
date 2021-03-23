@@ -1,0 +1,39 @@
+.navbar-tab {
+    text-align:  center;
+    font-family:  "Georgia", serif;
+    font-size:  18px;
+    font-weight:  bold;
+    background-color:  #4aaaa5;
+    color:  #ffffff;  
+}
+
+.nav-link:hover {
+    text-align:  center;
+    background-color:  #4aaaa5;
+    color:  #ffffff;
+}
+
+.nav-link {
+    text-align:  center;
+    font-family:  "Arial", sans-serif;
+    font-size:  14px;
+}
+
+.dropdown-item:hover {
+    text-align:  left;
+    font-family:  "Arial", sans-serif;
+    color:  #ffffff;
+    background-color:  #4aaaa5;
+}
+
+.dropdown-item {
+    text-align:  left;
+    font-family:  "Arial", sans-serif;
+    font-size:  14px;
+}
+
+h2 {
+    text-align:  center;
+    font-family:  "Georgia", serif;
+    margin-top:  75px;
+}
