@@ -32,12 +32,6 @@
     font-size:  14px;
 }
 
-h2 {
-    text-align:  center;
-    font-family:  "Georgia", serif;
-    margin-top:  75px;
-}
-
 h4 {
     text-align:  center;
     font-family:  "Georgia", serif;
@@ -71,4 +65,11 @@ h3 {
 
 .container-fluid {
     background-color:  #ffffff;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    font-family:  "Arial", sans-serif;
+    font-size:  12px;
 }
